@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.container-row {
+    display: flex;
+    width: 50vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+img {
+    width: 20%;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+
+.container-row h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding-left: 10%;
+    text-transform: uppercase;
+}
+
+.container-row p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    width: 75%;
+    padding-left: 10%;
+    line-height: 25px;
+    font-size: 15px;
+    height: 50%;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 80vh;
+
+}
+
+.col-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.col-2 {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.col-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+span {
+    width: 100%;
+
+}
+
+button {
+    width: 50%;
+    margin-left: 10%;
+    padding: 12px 5px 12px 5px;
+    border-radius: 25px;
+    border-style: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+}
+
+
+#button-text-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+#button-text-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#button-text-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+@media screen and (min-width: 1918px) {
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        height: 40vh;
+
+    }
+
+    .container-row p {
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        width: 65%;
+        padding-left: 10%;
+        line-height: 25px;
+        font-size: 15px;
+        height: 40%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    body {
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+
+    .container-row {
+        flex-direction: column;
+        width: 80vw;
+        height: 100vh;
+
+    }
+
+    .col-1,
+    .col-2,
+    .col-3 {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        height: 100%;
+
+    }
+
+    .col-1 {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 5px 5px 0 0;
+    }
+
+    .col-2 {
+        background-color: hsl(184, 100%, 22%);
+
+    }
+
+    .col-3 {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 10px;
+    }
+
+    button,
+    .btn {
+        margin-bottom: 10%;
+    }
+
+    .attribution {
+        bottom: 0;
+        left: 10%;
+        position: fixed;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    body {
+        margin-top: 80%;
+        margin-bottom: 80%;
+    }
+}
